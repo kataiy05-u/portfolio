@@ -20,10 +20,8 @@ const navbar = document.querySelector('.navbar');
 
 window.addEventListener('scroll', () => {
     if (window.scrollY > 50) {
-        navbar.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.5)';
-        navbar.style.background = 'rgba(13, 17, 23, 0.95)';
+        navbar.classList.add('scrolled');
     } else {
-        navbar.style.boxShadow = 'none';
-        navbar.style.background = 'rgba(13, 17, 23, 0.85)';
+        navbar.classList.remove('scrolled');
     }
 });
