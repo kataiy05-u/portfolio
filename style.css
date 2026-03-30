@@ -1,0 +1,429 @@
+/* 
+   =================================================
+   CSS สำหรับตกแต่งหน้าเว็บ Portfolio
+   - การออกแบบเน้นความหรูหรา โมเดิร์น (Modern, Clean, Premium)
+   - ใช้หลักการ Responsive รองรับการดูบนมือถือ
+   ================================================= 
+*/
+
+/* --- 1. การตั้งค่าเริ่มต้น (Reset & Variables) --- */
+:root {
+    /* โทนสีหลัก (คุณสามารถเปลี่ยนโค้ดสีเหล่านี้ได้เพื่อให้เข้ากับสไตล์คุณ) */
+    --bg-color: #0d1117;           /* สีพื้นหลังหลัก (Midnight Dark) */
+    --surface-color: #161b22;      /* สีพื้นหลังกล่อง (Card Background) */
+    --primary-color: #58a6ff;      /* สีสะดุดตา (Accent Color / Light Blue) */
+    --primary-hover: #3182ce;      /* สีเมื่อเอาเมาส์ชี้ */
+    --text-main: #c9d1d9;          /* สีข้อความหลัก */
+    --text-muted: #8b949e;         /* สีข้อความรอง */
+    
+    /* การตั้งค่าโครงร่าง */
+    --container-width: 1100px;     /* ความกว้างสูงสุดของเนื้อหา */
+    --font-sans: 'Inter', 'Prompt', sans-serif; /* ฟอนต์ */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    font-family: var(--font-sans);
+    line-height: 1.6;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/* --- 2. การจัดโครงสร้างทั่วไป (Layout) --- */
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.section {
+    padding: 100px 0;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 10px;
+    letter-spacing: -0.5px;
+}
+
+.section-subtitle {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    margin-bottom: 40px;
+}
+
+/* --- 3. แถบนำทาง (Navbar) --- */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    background-color: rgba(13, 17, 23, 0.85); /* ไล่ระดับความใส (Glassmorphism effect) */
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #ffffff;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: var(--primary-color);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: var(--text-main);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--primary-color);
+}
+
+/* --- 4. ส่วนหน้าแรก (Hero Section) --- */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-top: 70px;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.hero-text .highlight {
+    background: linear-gradient(120deg, var(--primary-color), #bc8cf2);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-text h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--text-main);
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    margin-bottom: 30px;
+    max-width: 500px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: 1px solid var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(88, 166, 255, 0.2);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.btn-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-color: #ffffff;
+    transform: translateY(-2px);
+}
+
+/* ✏️ แก้ไขข้อมูล: ส่วนกล่องใส่รูป (ถ้าคุณมีรูปลบตรง background ออกแล้วแทรก img ได้) */
+.hero-image-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero-image-placeholder {
+    width: 350px;
+    height: 350px;
+    background: linear-gradient(145deg, var(--surface-color), #21262d);
+    border-radius: 50%; /* ทำให้เป็นวงกลม */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--text-muted);
+    border: 2px dashed rgba(255, 255, 255, 0.1);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.hero-image-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* --- 5. ส่วน About (การ์ด) --- */
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.about-card {
+    background-color: var(--surface-color);
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.about-card h3 {
+    color: #ffffff;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.about-card p {
+    color: var(--text-main);
+    font-size: 1rem;
+}
+
+/* --- 6. ส่วน ทักษะ (Skills) --- */
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.skill-item {
+    background-color: var(--surface-color);
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease;
+}
+
+.skill-item:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* --- 7. ส่วน ประสบการณ์ (Experience) --- */
+.experience-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.experience-item {
+    background-color: var(--surface-color);
+    padding: 30px;
+    border-radius: 12px;
+    border-left: 4px solid var(--primary-color);
+    transition: transform 0.3s ease;
+}
+
+.experience-item:hover {
+    transform: translateX(5px);
+}
+
+.exp-header {
+    margin-bottom: 15px;
+}
+
+.exp-header h3 {
+    color: #ffffff;
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+}
+
+.exp-company {
+    font-weight: 600;
+    color: var(--text-main);
+    margin-right: 15px;
+}
+
+.exp-date {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 3px 10px;
+    border-radius: 15px;
+}
+
+.exp-details {
+    list-style-position: inside;
+    color: var(--text-main);
+}
+
+.exp-details li {
+    margin-bottom: 8px;
+}
+
+/* --- 8. ส่วนติดต่อ (Contact) --- */
+.contact-box {
+    background: linear-gradient(145deg, #1f2532, #11151c);
+    padding: 60px;
+    border-radius: 16px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.contact-box p {
+    color: var(--text-main);
+    max-width: 600px;
+    margin: 0 auto 30px;
+    font-size: 1.1rem;
+}
+
+.contact-methods {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact-item {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-color);
+    padding: 20px 30px;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.contact-item:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-3px);
+}
+
+.contact-item .label {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.contact-item span:not(.label) {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+/* --- 9. ส่วนท้ายล่าง (Footer) --- */
+footer {
+    text-align: center;
+    padding: 30px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    color: var(--text-muted);
+}
+
+/* --- 10. การทำงานบนมือถือ (Responsive/Mobile) --- */
+@media screen and (max-width: 768px) {
+    .hero-content {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding-top: 50px;
+    }
+    
+    .hero-text h1 {
+        font-size: 2.8rem;
+    }
+    
+    .hero-text p {
+        margin: 0 auto 30px;
+    }
+    
+    .hero-buttons {
+        justify-content: center;
+    }
+    
+    .hero-image-placeholder {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .nav-links {
+        display: none; /* บนมือถือซ่อนเมนูให้ดูเรียบง่าย หรือคุณสามารถเพิ่มโค้ดเปิด/ปิดเมนูได้ภายหลัง */
+    }
+}

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal Portfolio">
+    <title>My Portfolio</title>
+    <!-- ✏️ แก้ไขข้อมูล: โหลดฟอนต์ที่คุณชอบ ที่นี่ใช้ฟอนต์ Inter และ Prompt เพื่อความสวยงาม -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Prompt:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-content">
+            <!-- ✏️ แก้ไขข้อมูล: โลโก้หรือชื่อย่อของคุณ -->
+            <a href="#" class="logo">My<span>Port</span></a>
+            <ul class="nav-links">
+                <!-- ✏️ แก้ไขข้อมูล: เมนูด้านบน สามารถเพิ่มหรือลดได้ตามต้องการ -->
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <!-- ✏️ แก้ไขข้อมูล: คำทักทายและชื่อของคุณ -->
+                <h1>Hi, I'm <span class="highlight">KATAIY</span></h1>
+                
+                <!-- ✏️ แก้ไขข้อมูล: อาชีพ หรือคำอธิบายตัวคุณสั้นๆ -->
+                <h2>I am an aspiring UX/UI Designer with a foundation in front-end development.
+Passionate about transforming ideas into engaging and user-friendly digital experiences.</h2>
+                
+                <p>
+                    <!-- ✏️ แก้ไขข้อมูล: ข้อความเชิญชวน -->
+                    Ready to bring your ideas to life. Let's create something together.
+                </p>
+                
+                <div class="hero-buttons">
+                    <a href="#about" class="btn btn-primary">About Me</a>
+                    <a href="#contact" class="btn btn-secondary">Contact</a>
+                </div>
+            </div>
+            
+            <div class="hero-image-wrapper">
+                
+                <div class="hero-image-placeholder">
+                    <img src="img/kataiy.jpeg" alt=" " class="hero-image">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                
+                <!-- Card 1 -->
+                <div class="about-card">
+                    <!-- ✏️ แก้ไขข้อมูล: เนื้อหาแนะนำตัว -->
+                    <h3>Who am I?</h3>
+                    <p>A creative professional with a strong interest in technology. After 3 months of intensive learning in the AIoT program, I discovered my passion at the intersection of design and coding. I enjoy creating visually appealing designs that also function smoothly for users.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="about-card">
+                    <!-- ✏️ แก้ไขข้อมูล: ทักษะความถนัดรวมๆ สั้นๆ -->
+                    <h3>My Focus</h3>
+                    <p>Currently focusing on mastering UX/UI design principles and tools like Figma, while leveraging my existing skills in HTML, CSS, and basic JavaScript to create realistic prototypes and bridges the gap between design and development.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="about-card">
+                    <!-- ✏️ แก้ไขข้อมูล: ข้อมูลการติดต่อหรือสถานที่ทำงาน -->
+                    <h3>Availability</h3>
+                    <p>Based in Vientiane, Laos. Open to remote opportunities worldwide. I'm always eager to discuss new and exciting projects.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+        <div class="container">
+            <h2 class="section-title">Skills & Expertise</h2>
+            <p class="section-subtitle">What I have worked with so far</p>
+            
+            <div class="skills-grid">
+                <!-- ✏️ แก้ไขข้อมูล: ใส่ทักษะของคุณ (สามารถลบหรือเพิ่ม <div class="skill-item"> ได้ตามต้องการ) -->
+                <div class="skill-item">HTML / CSS</div>
+                <div class="skill-item">JavaScript</div>
+                <div class="skill-item">Node.js</div>
+                <div class="skill-item">UI/UX Design</div>
+                <div class="skill-item">Problem Solving</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section experience-section">
+        <div class="container">
+            <h2 class="section-title">Work Experience</h2>
+            <p class="section-subtitle">My professional journey</p>
+            
+            <div class="experience-list">
+                <!-- ✏️ แก้ไขข้อมูล: ประสบการณ์ที่ 1 -->
+                <div class="experience-item">
+                    <div class="exp-header">
+                        <h3>Position Title (e.g., Frontend Developer)</h3>
+                        <span class="exp-company">Company Name</span>
+                        <span class="exp-date">Jan 2024 - Present</span>
+                    </div>
+                    <ul class="exp-details">
+                        <!-- ✏️ แก้ไขข้อมูล: รายละเอียดงานที่ทำ (เป็นข้อๆ) -->
+                        <li>Developing and maintaining applications using modern tech stacks.</li>
+                        <li>Collaborating with cross-functional teams including designers and back-end developers.</li>
+                        <li>Implementing responsive designs and ensuring code quality.</li>
+                    </ul>
+                </div>
+
+                <!-- ✏️ แก้ไขข้อมูล: ประสบการณ์ที่ 2 -->
+                <div class="experience-item">
+                    <div class="exp-header">
+                        <h3>Previous Position Title</h3>
+                        <span class="exp-company">Previous Company Name</span>
+                        <span class="exp-date">Jun 2022 - Dec 2023</span>
+                    </div>
+                    <ul class="exp-details">
+                        <li>Assisted in building UI components that improved user engagement by 20%.</li>
+                        <li>Participated in daily meetings and technical discussions.</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 🎉 หมายเหตุ: ตัดส่วน Portfolio (ผลงาน) ออกตามที่ Request ไว้ -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="contact-box">
+                <h2 class="section-title">Let's Talk</h2>
+                <p>Whether you're looking to build something new, improve an existing platform, or bring a unique project to life, I'm here to help.</p>
+                
+                <div class="contact-methods">
+                    <!-- ✏️ แก้ไขข้อมูล: ช่องทางการติดต่อของคุณ -->
+                    <a href="mailto:your.email@example.com" class="contact-item">
+                        <span class="label">Email</span>
+                        <span>your.email@example.com</span>
+                    </a>
+                    <a href="#" class="contact-item">
+                        <span class="label">LinkedIn</span>
+                        <span>linkedin.com/in/yourprofile</span>
+                    </a>
+                    <a href="#" class="contact-item">
+                        <span class="label">Phone</span>
+                        <span>+66 8X XXX XXXX</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <!-- ✏️ แก้ไขข้อมูล: ปี และชื่อของคุณ -->
+            <p>&copy; 2026 Your Name. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
