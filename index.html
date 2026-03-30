@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html lang="th">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Personal Portfolio">
     <title>My Portfolio</title>
     <!-- ✏️ แก้ไขข้อมูล: โหลดฟอนต์ที่คุณชอบ ที่นี่ใช้ฟอนต์ Inter และ Prompt เพื่อความสวยงาม -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Prompt:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Noto+Sans+Lao:wght@400;500;600;700&family=Prompt:wght@300;400;600&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!-- Navbar -->
     <nav class="navbar">
@@ -19,7 +25,7 @@
                 <!-- ✏️ แก้ไขข้อมูล: เมนูด้านบน สามารถเพิ่มหรือลดได้ตามต้องการ -->
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -31,23 +37,24 @@
             <div class="hero-text">
                 <!-- ✏️ แก้ไขข้อมูล: คำทักทายและชื่อของคุณ -->
                 <h1>Hi, I'm <span class="highlight">KATAIY</span></h1>
-                
+
                 <!-- ✏️ แก้ไขข้อมูล: อาชีพ หรือคำอธิบายตัวคุณสั้นๆ -->
-                <h2>Aspiring UX/UI Designer focused on transforming ideas into intuitive and engaging digital solutions.</h2>
-                
+                <h2>I am an aspiring UX/UI Designer with a foundation in front-end development.
+                    Passionate about transforming ideas into engaging and user-friendly digital experiences.</h2>
+
                 <p>
                     <!-- ✏️ แก้ไขข้อมูล: ข้อความเชิญชวน -->
                     Ready to bring your ideas to life. Let's create something together.
                 </p>
-                
+
                 <div class="hero-buttons">
                     <a href="#about" class="btn btn-primary">About Me</a>
                     <a href="#contact" class="btn btn-secondary">Contact</a>
                 </div>
             </div>
-            
+
             <div class="hero-image-wrapper">
-                
+
                 <div class="hero-image-placeholder">
                     <img src="kataiy.jpg" alt=" " class="hero-image">
                 </div>
@@ -57,31 +64,76 @@
 
     <!-- About Section -->
     <section id="about" class="section about-section">
+        <!-- ของตกแต่ง Brutalist Shapes -->
+        <div class="shape oval-shape"></div>
+        <div class="shape star-shape">✦</div>
+        <div class="shape cloud-shape"></div>
+        <div class="shape flower-shape">✿</div>
+
         <div class="container">
             <h2 class="section-title">About Me</h2>
-            <div class="about-grid">
-                
+
+            <div class="about-stack">
                 <!-- Card 1 -->
-                <div class="about-card">
-                    <!-- ✏️ แก้ไขข้อมูล: เนื้อหาแนะนำตัว -->
-                    <h3>Who am I?</h3>
-                    <p>A creative professional with a background in technology. Through my 3-month journey in an intensive AIoT program, I discovered my true passion for UX/UI design. I enjoy the challenge of bridging the gap between coding and visual design to create user-friendly experiences.</p>
+                <div class="window-card">
+                    <div class="window-header">
+                        <div class="window-dots">
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+                    <div class="window-content">
+                        <!-- ✏️ แก้ไขข้อมูล: เนื้อหาแนะนำตัว -->
+                        <h3>Who am I?</h3>
+                        <p class="lao-text">ນ້ອງຊື່ ສຸພາລັກ ຈວງມະນີ (ກະຕ່າຍ) ນັກສຶກສາຈາກ ວິທະຍາໄລເຕັກນິກປາກປ່າສັກ
+                            (ປີ3)ສາຂາຄອມພິວເຕີທຸລະກິດ
+                            ເລີ່ມແລກນ້ອງເປັນຄົນທີ່ມີຄວາມສົນໃຈດ້ານການອອກແບບທັ້ງ Graphic Design ແລະ Editing Video
+                            ເຊິ່ງເປັນພື້ນຖານທີ່ເຮັດໃຫ້ນ້ອງມີຄວາມມັກໃນການສ້າງສັນ ແລະ ການອອກແບບຕ່າງໆ,
+                            ໂດຍທີ່ອີກດ້ານນ້ອງກໍມີຄວາມສົນໃຈ
+                            ທີ່ຈະສຶກສາກ່ຽວກັບ AIOT ແລະການພັດທະນາຊອບແວ ເພື່ອທີ່ຈະພັດທະນາເວັບໄຊ ແລະແອັບພິເຄຊັນຕ່າງໆ
+                            ໃຫ້ເຮົາເຂົ້າເຖິງ
+                            ແຫຼ່ງຂໍ້ມູນໄດ້ຢ່າງວ່ອງໄວ ແລະ ຖືກຕ້ອງ.
+                        </p>
+                    </div>
                 </div>
 
                 <!-- Card 2 -->
-                <div class="about-card">
-                    <!-- ✏️ แก้ไขข้อมูล: ทักษะความถนัดรวมๆ สั้นๆ -->
-                    <h3>My Focus</h3>
-                    <p>Currently focusing on mastering UX/UI design principles and tools like Figma, while leveraging my existing skills in HTML, CSS, and basic JavaScript to create realistic prototypes and bridges the gap between design and development.</p>
+                <div class="window-card">
+                    <div class="window-header">
+                        <div class="window-dots">
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+                    <div class="window-content">
+                        <!-- ✏️ แก้ไขข้อมูล: ทักษะความถนัดรวมๆ สั้นๆ -->
+                        <h3>My Focus</h3>
+                        <p class="lao-text">ປັດຈຸບັນກຳລັງມຸ່ງເນັ້ນໄປທີ່ການຝຶກຝົນຫຼັກການອອກແບບ UX/UI ແລະ ເຄື່ອງມື Figma
+                            ໃຫ້ຊຳນານ
+                            ພ້ອມທັ້ງນຳທັກສະພື້ນຖານທີ່ມີໃນດ້ານ HTML, CSS, JavaScript ມາໃຊ້ໃນການສ້າງ Prototypes
+                            ເພື່ອເຊື່ອມຕໍ່ຊ່ອງຫວ່າງລະຫວ່າງ ການອອກແບບ ແລະ ການພັດທະນາເຂົ້ານຳກັນ.</p>
+                    </div>
                 </div>
 
                 <!-- Card 3 -->
-                <div class="about-card">
-                    <!-- ✏️ แก้ไขข้อมูล: ข้อมูลการติดต่อหรือสถานที่ทำงาน -->
-                    <h3>Availability</h3>
-                    <p>Based in Vientiane, Laos. Open to remote opportunities worldwide. I'm always eager to discuss new and exciting projects.</p>
+                <div class="window-card">
+                    <div class="window-header">
+                        <div class="window-dots">
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+                    <div class="window-content">
+                        <!-- ✏️ แก้ไขข้อมูล: ข้อมูลการติดต่อหรือสถานที่ทำงาน -->
+                        <h3>Availability</h3>
+                        <p>Based in Vientiane, Laos. Open to remote opportunities worldwide. I'm always eager to discuss
+                            new
+                            and exciting projects.</p>
+                    </div>
                 </div>
-
             </div>
         </div>
     </section>
@@ -91,7 +143,7 @@
         <div class="container">
             <h2 class="section-title">Skills & Expertise</h2>
             <p class="section-subtitle">What I have worked with so far</p>
-            
+
             <div class="skills-grid">
                 <!-- ✏️ แก้ไขข้อมูล: ใส่ทักษะของคุณ (สามารถลบหรือเพิ่ม <div class="skill-item"> ได้ตามต้องการ) -->
                 <div class="skill-item">HTML / CSS</div>
@@ -103,40 +155,46 @@
         </div>
     </section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="section experience-section">
+    <!-- Projects Section -->
+    <section id="projects" class="section project-section">
         <div class="container">
-            <h2 class="section-title">Work Experience</h2>
-            <p class="section-subtitle">My professional journey</p>
-            
-            <div class="experience-list">
-                <!-- ✏️ แก้ไขข้อมูล: ประสบการณ์ที่ 1 -->
-                <div class="experience-item">
-                    <div class="exp-header">
-                        <h3>Position Title (e.g., Frontend Developer)</h3>
-                        <span class="exp-company">Company Name</span>
-                        <span class="exp-date">Jan 2024 - Present</span>
-                    </div>
-                    <ul class="exp-details">
-                        <!-- ✏️ แก้ไขข้อมูล: รายละเอียดงานที่ทำ (เป็นข้อๆ) -->
-                        <li>Developing and maintaining applications using modern tech stacks.</li>
-                        <li>Collaborating with cross-functional teams including designers and back-end developers.</li>
-                        <li>Implementing responsive designs and ensuring code quality.</li>
-                    </ul>
-                </div>
+            <h2 class="section-title">Projects</h2>
+            <p class="section-subtitle">Things I've built</p>
 
-                <!-- ✏️ แก้ไขข้อมูล: ประสบการณ์ที่ 2 -->
-                <div class="experience-item">
-                    <div class="exp-header">
-                        <h3>Previous Position Title</h3>
-                        <span class="exp-company">Previous Company Name</span>
-                        <span class="exp-date">Jun 2022 - Dec 2023</span>
+            <div class="project-list">
+                <!-- ✏️ แก้ไขข้อมูล: โปรเจกต์ที่ 1 -->
+                <a href="https://kataiy05-u.github.io/rainy-leaves/" target="_blank" class="project-item">
+                    <div class="project-header">
+                        <h3>Rainy leaves Book Store</h3>
+                        <div class="click-here">
+                            <h4>*Click*</h4>
+                        </div>
+                        <span class="project-tech">HTML, CSS, JS</span>
+                        <span class="project-date">March 2025</span>
                     </div>
-                    <ul class="exp-details">
-                        <li>Assisted in building UI components that improved user engagement by 20%.</li>
-                        <li>Participated in daily meetings and technical discussions.</li>
+                    <ul class="project-details">
+                        <!-- ✏️ แก้ไขข้อมูล: รายละเอียดโปรเจกต์ (เป็นข้อๆ) -->
+                        <li>ສ້າງເວັບໄຊ້ຊື້ຂາຍໜັງສື.</li>
+                        <li>ພັດທະນາເວັບໄຊ້ໃຫ້ໃຊ້ງ່າຍ ແຕ່ປອດໄພ.</li>
+                        <li>ເລືອກສີ ແລະ ອົງປະກອບລຽບງ່າຍໃຫ້ຄວາມຮູ້ສຶກອົບອຸ່ນ.</li>
                     </ul>
-                </div>
+                </a>
+
+                <!-- ✏️ แก้ไขข้อมูล: โปรเจกต์ที่ 2 -->
+                <a href="https://kataiy05-u.github.io/web-food/" target="_blank" class="project-item">
+                    <div class="project-header">
+                        <h3>Food website</h3>
+                        <div class="click-here">
+                            <h4>*Click*</h4>
+                        </div>
+                        <span class="project-tech">HTML, CSS</span>
+                        <span class="project-date">June 2025</span>
+                    </div>
+                    <ul class="project-details">
+                        <li>ໂຈດທີ່ໄດ້ຮັບຄືສ້າງເວັບໄຊ້ໜ້າຫຼັກຂອງຮ້ານອາຫານ.</li>
+                        <li>ເປັນໂປຣເຈັກທຳອິດທີ່ໄດ້ເຮັດເລີຍຮຽນນຳ YT ຮ້ອຍເປີເຊັນ.</li>
+                    </ul>
+                </a>
             </div>
             <!-- 🎉 หมายเหตุ: ตัดส่วน Portfolio (ผลงาน) ออกตามที่ Request ไว้ -->
         </div>
@@ -147,17 +205,18 @@
         <div class="container">
             <div class="contact-box">
                 <h2 class="section-title">Let's Talk</h2>
-                <p>Whether you're looking to build something new, improve an existing platform, or bring a unique project to life, I'm here to help.</p>
-                
+                <p>Eager to collaborate on creative projects where I can contribute my design thinking, always ready to
+                    learn, and excited to grow as a designer.</p>
+
                 <div class="contact-methods">
                     <!-- ✏️ แก้ไขข้อมูล: ช่องทางการติดต่อของคุณ -->
                     <a href="mailto:your.email@example.com" class="contact-item">
                         <span class="label">Email</span>
-                        <span>kataiy05@gmail.com</span>
+                        <span>kataiyspl@gmail.com</span>
                     </a>
                     <a href="#" class="contact-item">
-                        <span class="label">Facebook</span>
-                        <span>Souphaluck Chuangmany</span>
+                        <span class="label">Social Media</span>
+                        <span>FB : Souphaluck Chuangmany</span>
                     </a>
                     <a href="#" class="contact-item">
                         <span class="label">Phone</span>
@@ -172,10 +231,11 @@
     <footer>
         <div class="container">
             <!-- ✏️ แก้ไขข้อมูล: ปี และชื่อของคุณ -->
-            <p>&copy; 2026 Your Name. All rights reserved.</p>
+            <p>&copy; 2026 kataiyspl. All rights reserved.</p>
         </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
+
 </html>
